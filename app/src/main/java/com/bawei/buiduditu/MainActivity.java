@@ -30,7 +30,8 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onReceiveLocation(BDLocation location) {
             // map view 销毁后不在处理新接收的位置
-            if (location == null || bmapView == null) {
+            if (location == null || bmapView == null)
+            {
                 return;
             }
             MyLocationData locData = new MyLocationData.Builder()
